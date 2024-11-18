@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "journeys",
+	"version": "${version}",
+	"name": "Journeys",
+	"description": "A start of a journey, an end to the ones before.",
+	"authors": [
+		"Spookfu"
+	],
+	"contact": {
+		"homepage": "TBA",
+		"sources": "TBA"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/journeys/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"spookfu.journeys.Journeys"
+		],
+		"fabric-datagen": [
+			"spookfu.journeys.JourneysDataGenerator"
+		]
+	},
+	"client": [
+		"spookfu.journeys.journeys.JourneysClient"
+	],
+	"mixins": [
+		"journeys.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
