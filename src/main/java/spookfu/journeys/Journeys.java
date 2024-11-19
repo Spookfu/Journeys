@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import spookfu.journeys.item.ModItems;
 
 public class Journeys implements ModInitializer {
 	public static final String MOD_ID = "journeys";
@@ -11,6 +12,7 @@ public class Journeys implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 
 	}
 }
